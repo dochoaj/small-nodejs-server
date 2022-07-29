@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: ['localhost:3000']
+  origin: '*'
 }))
 
 // Create GET request
