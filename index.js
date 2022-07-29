@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://apps-403161767531951.apps.fbsbx.com/']
+  origin: ['http://localhost:3000', 'https://apps-403161767531951.apps.fbsbx.com']
 }))
 
 // Create GET request
