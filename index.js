@@ -10,9 +10,14 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 
+app.get("/api", (req, res) => {
+  console.log(req);
+  res.json({ hello: 'world' })
+})
+
 // Initialize server
-app.listen(5000, () => {
-  console.log("Running on port 5000.");
+app.listen(8080, () => {
+  console.log("Running on port 8080.");
 });
 
 module.exports = app;
